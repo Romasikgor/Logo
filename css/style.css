@@ -23,6 +23,7 @@ img {
 .wrapper {
     background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(74, 40, 0, 1) 100%);
     width: 100%;
+    overflow-x: hidden;
 }
 
 .container {
@@ -115,13 +116,15 @@ header nav ul li.btn a:hover,
     font-weight: bold;
 }
 
-.hero--info p {
+.hero--info p,
+.hero-about .info p {
     font-weight: 500;
     line-height: 170%;
     margin: 30px 0;
 }
 
-.hero--info .btn {
+.hero--info .btn,
+.hero-about .info .btn {
     background: #FA8305;
     color: #fff;
     border-radius: 50px;
@@ -131,7 +134,8 @@ header nav ul li.btn a:hover,
     transition: all 500ms ease;
 }
 
-.hero--info .btn:hover {
+.hero--info .btn:hover,
+.hero-about .info .btn:hover {
     cursor: pointer;
     transform: scale(1.1);
 }
@@ -144,7 +148,7 @@ header nav ul li.btn a:hover,
 
 /* #endregion */
 
-
+/* #region Home */
 /* #region games */
 .trending {
     padding-top: 50px;
@@ -220,7 +224,6 @@ header nav ul li.btn a:hover,
 }
 
 /* #endregion */
-
 
 /* #region project */
 .features {
@@ -355,7 +358,171 @@ header nav ul li.btn a:hover,
 }
 
 /* #endregion */
+/* #endregion */
 
+/* #regoin About us */
+/* #region hero-about */
+.hero-about {
+    position: relative;
+}
+
+.hero-about .info {
+    width: 500px;
+    padding: 150px 0;
+}
+
+.hero-about .info h2 {
+    padding-bottom: 40px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.hero-about .info h2 .fa-greater-than {
+    font-size: 12px;
+    font-weight: 400;
+    margin-left: 7px;
+}
+
+.hero-about .info span {
+    color: #E47500;
+    margin-left: 5px;
+}
+
+.hero-about .info h1 {
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.hero-about .info button {
+    margin-top: 20px;
+}
+
+.hero-about img {
+    position: absolute;
+    right: -255px;
+    top: 0;
+}
+
+/* #endregion hero-about */
+
+/* #region work */
+.work {
+    padding: 80px 0;
+}
+
+.work h2 {
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.work .blocks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.work .blocks .block {
+    width: 25%;
+    border-radius: 10px;
+    padding: 50px 35px;
+    background: #1C140F;
+}
+
+.work .blocks .block .badge {
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+.work .blocks .block .badge.purpule {
+    background: #560f67;
+}
+
+.work .blocks .block .badge.brown {
+    background: #31190D;
+}
+
+.work .blocks .block .badge.green {
+    background: #192a1d;
+}
+
+.work .blocks .block h3 {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+/* #endregion */
+
+/* #region nowrapper-info */
+.nowrapper-info {
+    background: #1C140F;
+}
+
+.nowrapper-info .container {
+    padding-top: 115px;
+    display: flex;
+    gap: 95px;
+}
+
+.nowrapper-info .container .info {
+    width: 540px;
+}
+
+
+.nowrapper-info .container .info h4 {
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 14px;
+}
+
+.nowrapper-info .container .info h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.nowrapper-info .container .info p {
+    font-weight: 300;
+    line-height: 202%;
+}
+/* #endregion */
+
+/* #region team */
+.team h4 {
+    margin-top: 150px;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 63px;
+}
+
+.team .blocks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team .blocks .block {
+    text-align: center;
+    padding: 35px 86px;
+    border-radius: 20px;
+    background: #1C140F;
+}
+
+.team .blocks .block p {
+    padding-top: 5px;
+    font-weight: 300;
+    color: #E8E8E8;
+}
+
+.team .blocks .block .name {
+    padding-top: 5px;
+    font-size: 19px;
+    font-weight: 600;
+}
+/* #endregion */
+
+
+
+
+
+/* #region footer */
 footer {
     background: #070707;
     padding: 50px 0;
@@ -436,3 +603,5 @@ footer hr {
 footer>p {
     text-align: center;
 }
+
+/* #endregion */
