@@ -36,7 +36,8 @@ header {
     padding: 50px 0;
 }
 
-header .logo, footer .blocks .logo {
+header .logo,
+footer .blocks .logo {
     text-transform: uppercase;
     font-size: 29px;
     font-weight: 800;
@@ -394,12 +395,35 @@ footer .icon i {
     font-size: 16px;
     background: #fff;
     color: #070707;
-    padding: 11px 13px;
+    padding: 8px 13px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    border-radius: 100%
+    border-radius: 100%;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+footer .icon i:hover {
+    transform: scale(1.2);
+    color: #fff;
+}
+
+.fa-facebook-f:hover {
+    background: #3b5998;
+}
+
+.fa-instagram:hover {
+    background: #C13584;
+}
+
+.fa-twitter:hover {
+    background: #1DA1F2;
+}
+
+.fa-linkedin-in:hover {
+    background: #4b0082;
 }
 
 footer hr {
@@ -409,7 +433,6 @@ footer hr {
     background: #ccc;
 }
 
-footer > p {
+footer>p {
     text-align: center;
 }
-
