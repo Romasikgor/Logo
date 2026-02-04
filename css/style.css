@@ -933,6 +933,124 @@ header nav ul li.btn a:hover,
     filter: brightness(70%);
 }
 
+/* #endregion */
+/* #endregion */
+
+/* #region news */
+.input-search {
+    text-align: center;
+    margin-top: 75px;
+    position: relative;
+}
+
+.input-search input {
+    width: 400px;
+    padding: 15px;
+    padding-left: 60px;
+    background: #1C140F;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    border-radius: 7px;
+    outline: none;
+    outline: 1;
+}
+
+.input-search input::placeholder {
+    color: #fff;
+    font-size: 16px;
+}
+
+.input-search i {
+    position: absolute;
+    top: 16px;
+    left: 480px;
+    outline: 2;
+}
+
+.main-news {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    align-items: center;
+}
+
+.left,
+.rigth {
+    width: 600px;
+}
+
+.main-news .left .block-left img {
+    width: 587px;
+    height: 295px;
+    border-radius: 20px;
+}
+
+.main-news .left .block-left .btn-p {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 21px 0;
+}
+
+.main-news .left .block-left .btn-p button,
+.block-rigth .btn-p button {
+    padding: 10px 30px;
+    font-size: 16px;
+    color: #fff;
+    background: #2351F5;
+    border: none;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.main-news .left .block-left .btn-p button:hover, .block-rigth .btn-p button:hover {
+    filter: brightness(120%);
+}
+
+.main-news .left .block-left h2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 32px;
+}
+
+.main-news .left .block-left .p {
+    font-size: 17px;
+    font-family: 400;
+    margin-bottom: 90px;
+}
+
+hr {
+    margin-bottom: 90px;
+    border: 0.7px solid #A5A5A5;
+}
+
+.block-rigth {
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.block-rigth .rigth-flex img {
+    width: 195px;
+    height: 183px;
+    border-radius: 20px;
+}
+
+.block-rigth .btn-p {
+    display: flex;
+    margin-left: 31px;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 23px;
+}
+
+.block-rigth h2 {
+    margin-left: 31px;
+    font-size: 23px;
+}
+
+
 /* #region footer */
 footer {
     background: #070707;
