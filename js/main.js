@@ -26,41 +26,23 @@ btn.addEventListener('click', () => {
     }, 2500)
 })
 
-// form-contacts
+/* slider */
+const btnNext = document.querySelector('.next');
+const btnPrev = document.querySelector('.prev');
+const sliderLine = document.querySelector('.blocks-slaider')
+let offset = 0;
 
-const formBtn = document.querySelector('.form-btn');
-const formFirstName = document.querySelector('#form-first-name');
-const formLastName = document.querySelector('#form-last-name');
-const formEmail = document.querySelector('#form-email');
-const message = document.querySelector('#message');
-const formSpan = document.querySelectorAll('.form-span');
-const formError = document.querySelector("#form-error");
+btnNext.addEventListener('click', () => {
+    offset += 550;
+    if (offset > 2000)
+        offset = 0;
+    sliderLine.style.left = -offset + 'px';
+});
 
-formBtn.addEventListener('click', () => {
-    if (formFirstName.value.length <= 0 || formLastName.value.length <= 0 || formEmail.value.length <= 0 || message.value.length <= 0) {
-        formSpan.forEach((span) => {
-            span.style.color = 'red';
-        })
-        return;
-    }
-    else if (!formEmail.value.includes('@') || !formEmail.value.includes('.')) {
-        formError.textContent = 'Невірно прописаний Email';
-        return;
-    }
-    else if (message.value.length < 30 || message.value.length > 500) {
-        formError.textContent = 'Повідомлення завелике або замаленьке';
-        return;
-    }
-    else {
-        formError.style.color = 'yellow';
-        formError.textContent = 'Відправлено!';
-        message.value = '';
-
-        setTimeout(() => {
-            formError.style.color = 'red';
-            formError.textContent = '';
-        }, 5000)
-    }
-
-
+btnPrev.addEventListener('click', () => {
+    offset -= 550;
+    if (offset < 0)
+        offset = 1700;
+    sliderLine.style.left = -offset + 'px';
 })
+

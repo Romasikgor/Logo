@@ -17,6 +17,10 @@ a {
     text-decoration: none;
 }
 
+li {
+    list-style: none;
+}
+
 img {
     max-width: 100%;
 }
@@ -38,11 +42,12 @@ header {
     padding: 50px 0;
 }
 
-header .logo,
+header .logo a,
 footer .blocks .logo {
     text-transform: uppercase;
     font-size: 29px;
     font-weight: 800;
+    color: #fff;
 }
 
 header nav {
@@ -91,7 +96,8 @@ header nav ul li.btn a,
 }
 
 header nav ul li.btn a:hover,
-.email .block button:hover {
+.email .block button:hover,
+.blocks-info .block div button {
     background: #a02604;
 }
 
@@ -363,7 +369,7 @@ header nav ul li.btn a:hover,
 /* #endregion */
 /* #endregion */
 
-/* #regoin About us */
+/* #region About us */
 /* #region hero-about */
 .hero-about {
     position: relative;
@@ -409,7 +415,7 @@ header nav ul li.btn a:hover,
     top: 0;
 }
 
-/* #endregion hero-about */
+/* #endregion */
 
 /* #region work */
 .work {
@@ -525,7 +531,6 @@ header nav ul li.btn a:hover,
 }
 
 /* #endregion */
-
 /* #endregion */
 
 /* #region contacts */
@@ -603,6 +608,8 @@ header nav ul li.btn a:hover,
 
 /* #endregion */
 
+
+/* #region feedback */
 .feedback {
     padding: 70px 0;
     background: #1C140F;
@@ -685,6 +692,246 @@ header nav ul li.btn a:hover,
     background: #b01414;
 }
 
+/* #endregion */
+/* #endregion */
+
+/* #region portfolio */
+/* #region block-info */
+.block-info {
+    margin-top: 45px;
+    padding: 37px 0;
+    background: #1C140F;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block-info .blocks {
+    padding: 20px 153px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    padding-right: 118px;
+    border-right: 2px solid #EEEFF2;
+}
+
+.block-info .end {
+    border: none;
+}
+
+.block-info .blocks i {
+    font-size: 24px;
+    padding: 16px;
+    background: #FFECEC;
+    color: #DC7000;
+    border-radius: 70px;
+}
+
+.block-info .blocks div h4 {
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+
+.block-info .blocks div p {
+    font-size: 20px;
+}
+
+/* #endregion */
+/* #region main-contacts */
+.img-text {
+    margin-top: 80px;
+    display: flex;
+    gap: 90px;
+    padding-bottom: 170px;
+    cursor: pointer;
+}
+
+.img-text img {
+    transition: all 500ms ease;
+}
+
+.img-text img:hover {
+    transform: scale(1.1);
+    filter: brightness(120%);
+}
+
+.img-text div h2,
+.blocks-info .block div h2 {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 180%;
+    margin-bottom: 12px;
+}
+
+.img-text div p,
+.blocks-info .block div p {
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.img-text div ul li {
+    margin-bottom: 30px;
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+
+.img-text div ul li i {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #2FAB73;
+}
+
+.blocks-info .block {
+    display: flex;
+    gap: 130px;
+    padding-bottom: 180px;
+}
+
+.blocks-info .block div h2 {
+    margin-bottom: 30px;
+}
+
+.blocks-info .block div button {
+    margin-top: 46px;
+    padding: 13px 45px;
+    color: #fff;
+    background: #DC7000;
+    border: none;
+    font-size: 18px;
+    transition: all 500ms ease;
+    cursor: pointer;
+}
+
+.blocks-info .block div button:hover {
+    background: #b01414;
+}
+
+.blocks-info .block img {
+    width: 496px;
+}
+
+/* #endregion */
+/* #region karusel */
+.slaider {
+    background: #1C140F;
+    padding: 75px 0px;
+    overflow: hidden;
+}
+
+.slaider h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.slaider>p {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.blocks-slaider {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+    width: 2400px;
+    position: relative;
+    left: 0;
+    transition: left 300ms ease;
+}
+
+.blocks-slaider .blockSlaider {
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    width: 450px;
+    height: 150px;
+}
+
+.blocks-slaider .blockSlaider .flex {
+    display: flex;
+    gap: 108px;
+    align-items: center;
+}
+
+.blocks-slaider .blockSlaider .flex>div {
+    display: flex;
+    gap: 20px;
+}
+
+.blocks-slaider .blockSlaider .flex>div img {
+    width: 50px;
+    height: 50px;
+}
+
+.blocks-slaider .blockSlaider .flex>div div h4 {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.blocks-slaider .blockSlaider .flex>div div p {
+    color: #4F5665;
+    font-size: 14px;
+}
+
+.blocks-slaider .blockSlaider .flex p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: 20px;
+}
+
+.blocks-slaider .blockSlaider .flex i {
+    font-size: 16px;
+    color: #FEA250;
+}
+
+.blocks-slaider .blockSlaider>p {
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.footer-slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px;
+    padding-top: 50px;
+}
+
+.active-block {
+    display: flex;
+    gap: 15px;
+}
+
+.active img {
+    width: 15px;
+    height: 15px;
+}
+
+.btn-slider {
+    display: flex;
+    gap: 20px;
+    font-size: 60px;
+}
+
+.btn-slider i {
+    color: #DC7000;
+}
+
+.btn-slider .prev:hover,
+.btn-slider .next:hover {
+    cursor: pointer;
+    filter: brightness(70%);
+}
 
 /* #region footer */
 footer {
@@ -736,7 +983,8 @@ footer .icon i {
     transition: all 300ms ease;
 }
 
-footer .icon i:hover, .follo-us .icon i:hover {
+footer .icon i:hover,
+.follo-us .icon i:hover {
     transform: scale(1.2);
     color: #fff;
     cursor: pointer;
